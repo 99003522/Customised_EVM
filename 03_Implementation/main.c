@@ -50,7 +50,7 @@ int main()
     printf(" \n                        BOOTH ID:-");
 	scanf("%d",&id);
     boothid(id);
-    test_main();
+    
 
 return 0;
 }
