@@ -1,5 +1,5 @@
 
-PROJECT_NAME = properties_number_analyzer
+PROJECT_NAME = EVM
 
 
 BUILD = build
