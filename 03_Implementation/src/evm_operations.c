@@ -29,13 +29,13 @@ case 3: a=leadingCandidate(1,1);
 
 
         break;
-case 4:printf("THANKYOU FOR USING EVM");getch();system("cls");main();
-default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");getch();system("cls");
+case 4:printf("THANKYOU FOR USING EVM");main();
+default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");//getch();system("cls");
 }
 }while(choice!=0);
 
 //hold the screen
-getchar();
+//getchar();
 
 }
 
@@ -52,8 +52,8 @@ int boothid(int id)//EVM ACTIVATION
 	    printf("#####EVM ACTIVATED######\n");
 	    printf("CHIEF ELECTORAL OFFICER- Mr.Shyam Prasad Sharma\n");
 	    printf("CONSTITUTION- TRIVANDRUM");
-	    getch();
-	    system("cls");
+	    //getch();
+	    //system("cls");
 	     menu();
 	    return 1;
 
@@ -64,7 +64,7 @@ int boothid(int id)//EVM ACTIVATION
 
 
 
-		getch();//holds the screen
+		//getch();//holds the screen
 		main();
 		return 0;
 
@@ -100,8 +100,8 @@ void castVote(){
 
     if (line != -1){
         printf("YOU HAVE ALREADY VOTED");
-        getch();
-        system("cls");}
+        //getch();
+        //system("cls");}
     else
         {
              fclose(fptr);
@@ -139,9 +139,9 @@ switch(choice){
 }
 printf("\n THANKYOU FOR VOTING !!");
 
-getch();
+//getch();
 
-system("cls");
+//system("cls");
 fclose(fpt1);
 
 
@@ -190,8 +190,8 @@ printf("\n %s - %d ", CANDIDATE2, votesCount2);
 printf("\n %s - %d ", CANDIDATE3, votesCount3);
 printf("\n %s - %d ", CANDIDATE4, votesCount4);
 printf("\n %s - %d ", "Spoiled Votes", spoiledtvotes);
-getch();
-system("cls");
+//getch();
+//system("cls");
  menu();
 	break;
 	}
@@ -201,7 +201,7 @@ system("cls");
 		a++;
 
 
-		getch();//holds the screen
+		//getch();//holds the screen
 
 
 	}
@@ -211,10 +211,10 @@ system("cls");
 	{
 		printf("\nSorry you have entered the wrong username and password for three times!!!");
 
-		getch();
+		//getch();
 
 		}
-		system("cls");
+		//system("cls");
 
 }
 
@@ -297,29 +297,24 @@ int leadingCandidate(int x,int y){
 	     printf("\n\n  #### Leading Candiate ####\n\n");
      if(votesCount1>votesCount2 && votesCount1>votesCount3 && votesCount1 >votesCount4)
     {printf("\t%s",CANDIDATE1);
-    getch();
-    system("cls");
+   
     menu();return 3;
     }
     else if (votesCount2>votesCount3 && votesCount2>votesCount4 && votesCount2 >votesCount1)
     {printf("\t%s",CANDIDATE2);return 4;
-    getch();
-    system("cls");
+    
     menu();}
     else if(votesCount3>votesCount4 && votesCount3>votesCount2 && votesCount3 >votesCount1)
     {printf("\t%s",CANDIDATE3);return 5;
-    getch();
-    system("cls");
+   
     menu();}
     else if(votesCount4>votesCount1 && votesCount4>votesCount2 && votesCount4 >votesCount3)
     {printf("\t%s",CANDIDATE4);return 6;
-    getch();
-    system("cls");
+    
     menu();}
     else
     {printf("----- Warning !!! No-win situation----");}
-    getch();
-    system("cls");
+    
     menu();
 	break;
 	}
@@ -328,7 +323,7 @@ int leadingCandidate(int x,int y){
 		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
 		a++;
 
-		getch();//holds the screen
+		//getch();//holds the screen
 
 	}
 }
@@ -337,10 +332,10 @@ int leadingCandidate(int x,int y){
 	{
 		printf("\nSorry you have entered the wrong username and password for three times!!!");
 
-		getch();
+		//getch();
 
 		}
-		system("cls");
+		//system("cls");
 
    }
 
