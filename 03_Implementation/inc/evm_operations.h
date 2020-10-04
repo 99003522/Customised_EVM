@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include<conio.h>
+//#include<conio.h>
 #include<time.h>
 #include <string.h>
 #define BUFFER_SIZE 1000
@@ -16,6 +16,7 @@
 
 //int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
 int boothid(int id);
+void menu():
 int adLogin(char uname[10],char pword[10]);
 void castVote(void);
 int CheckVoterId(FILE *fptr, const char *word, int *line, int *col);
