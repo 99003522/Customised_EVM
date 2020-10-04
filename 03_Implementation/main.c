@@ -1,7 +1,7 @@
 #include <evm_operations.h>
 
 //int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
-void menu()
+/*void menu()
 {
     int choice;
     do{
@@ -39,7 +39,7 @@ default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");get
 getchar();
 
 }
-
+*/
 
 
 int main()
