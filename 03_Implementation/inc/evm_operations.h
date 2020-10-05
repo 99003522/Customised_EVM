@@ -16,12 +16,12 @@
 
 //int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
 int boothid(int id);
-void menu();
+//void menu();
 int adLogin(char uname[10],char pword[10]);
-void castVote();
-int CheckVoterId(FILE *fptr, const char *word, int *line, int *col);
-void votesCount();
-int leadingCandidate(int x,int y);
+//void castVote();
+//int CheckVoterId(FILE *fptr, const char *word, int *line, int *col);
+//void votesCount();
+//int leadingCandidate(int x,int y);
 
 
 #endif
