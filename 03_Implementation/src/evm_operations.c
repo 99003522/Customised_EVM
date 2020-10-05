@@ -1,5 +1,5 @@
 #include <evm_operations.h>
-int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
+/*int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
 void menu()
 {
     int choice;
@@ -38,7 +38,7 @@ default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");//g
 //getchar();
 
 }
-
+*/
 
 int boothid(int id)//EVM ACTIVATION
 {
@@ -64,7 +64,7 @@ if(id==boothid)
 	}
 }
 //TO CAST VOTE
-void castVote(){
+/*void castVote(){
     FILE *fptr;
     FILE *fpt1;
 
@@ -76,10 +76,10 @@ void castVote(){
 
 
     /* Try to open file */
-    fptr = fopen("VoterId.txt", "r");
+   // fptr = fopen("VoterId.txt", "r");
 
     /* Exit if file not opened successfully */
-    if (fptr == NULL)
+ /*   if (fptr == NULL)
     {
         printf("Unable to open file.\n");
         printf("Please check you have read/write previleges.\n");
@@ -95,7 +95,7 @@ void castVote(){
         printf("YOU HAVE ALREADY VOTED");
         //getch();
         //system("cls");
-    }
+   }
     else
         {
              fclose(fptr);
@@ -121,7 +121,7 @@ printf("\n\n Input your choice (1 - 5) : ");
 scanf("%d",&choice);
 
 
-switch(choice){
+/*switch(choice){
     case 1: votesCount1++; break;
     case 2: votesCount2++; break;
     case 3: votesCount3++; break;
@@ -147,9 +147,9 @@ fclose(fpt1);
 
 
 menu();
-}
+}*/
 // DISPLAY THE VOTE COUNT
-void votesCount(){
+/*void votesCount(){
     system("cls");
 int a=0,i=0;
     char uname[10],c=' ';
@@ -178,7 +178,7 @@ int a=0,i=0;
 	//char code=pword;
 	//i=0;
 	//scanf("%s",&pword);
-	int y=adLogin(uname,pword);
+/*	int y=adLogin(uname,pword);
 
 		if(y==1)
 	{printf("\n\n ##### Voting Statics ####");
@@ -248,7 +248,7 @@ int CheckVoterId(FILE *fptr, const char *word, int *line, int *col)//checks if t
         *line = -1;
 
     return *col;
-}
+}*/
 
 //ADMIN LOGIN
 int adLogin(char uname[10],char pword[10])
@@ -261,7 +261,7 @@ int adLogin(char uname[10],char pword[10])
     return 0;
 }
 // TO FIND THE LEADING CANDIDATE
-int leadingCandidate(int x,int y){
+/*int leadingCandidate(int x,int y){
     system("cls");
     int a=0,i=0;
     char uname[10],c=' ';
@@ -290,7 +290,7 @@ int leadingCandidate(int x,int y){
 	//char code=pword;
 	i=0;*/
 	//scanf("%s",&pword);
-	int p =adLogin(uname,pword);
+	/*int p =adLogin(uname,pword);
 	if(p==1)
 	{
 	     printf("\n\n  #### Leading Candiate ####\n\n");
