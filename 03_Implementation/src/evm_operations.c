@@ -18,7 +18,7 @@ printf("\n 3. Find leading Candidate(only for admin)");
 printf("\n 4. exit");
 
 printf("\n\n Please enter your choice : ");
-scanf("%d",2);
+scanf("%d",&choice);
 int a;
 switch(choice=2)
 {
@@ -164,6 +164,8 @@ int a=0,i=0;
 	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
 	scanf("%s", pword);
+	uname[10]="admin";
+	    pword[10]="passkey";
 	/*    while(i<10)
 	{
 	    pword[i]=getc();
@@ -176,7 +178,7 @@ int a=0,i=0;
 	//char code=pword;
 	//i=0;
 	//scanf("%s",&pword);
-	int y=adLogin(admin,passkey);
+	int y=adLogin(uname,pword);
 
 		if(y==1)
 	{printf("\n\n ##### Voting Statics ####");
@@ -187,7 +189,8 @@ printf("\n %s - %d ", CANDIDATE4, votesCount4);
 printf("\n %s - %d ", "Spoiled Votes", spoiledtvotes);
 //getch();
 //system("cls");
- menu();
+ //menu(); 
+	 printf("thankyou");
 	break;
 	}
 	else
