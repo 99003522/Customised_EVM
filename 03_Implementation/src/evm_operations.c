@@ -176,7 +176,7 @@ int a=0,i=0;
 	//char code=pword;
 	//i=0;
 	//scanf("%s",&pword);
-	int y=adLogin(uname,pword);
+	int y=adLogin(admin,passkey);
 
 		if(y==1)
 	{printf("\n\n ##### Voting Statics ####");
