@@ -197,7 +197,7 @@ printf("\n %s - %d ", "Spoiled Votes", spoiledtvotes);
 	{
 		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
 		a++;
-
+                break;
 
 		//getch();//holds the screen
 
@@ -208,7 +208,7 @@ printf("\n %s - %d ", "Spoiled Votes", spoiledtvotes);
 	if (a>2)
 	{
 		printf("\nSorry you have entered the wrong username and password for three times!!!");
-
+                 break;
 		//getch();
 
 		}
