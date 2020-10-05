@@ -33,12 +33,14 @@ void test_boothid(void) {
   CU_ASSERT(1 == boothid(100500));
 
 
-  CU_ASSERT(1 == boothid(15));
+  CU_ASSERT(1 == boothid(125305));//Dummy fail case
 }
 
 
 void test_adLogin(void) {
-  CU_ASSERT(3 == adLogin("admin","passkey"));
+  CU_ASSERT(1 == adLogin("admin","passkey"));
+  CU_ASSERT(1 == adLogin("wrong","wrong"));//dummy fail case
+  
 
 
 }
