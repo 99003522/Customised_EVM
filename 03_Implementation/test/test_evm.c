@@ -14,7 +14,7 @@ int main() {
     return CU_get_error();
   CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
   CU_add_test(suite, "boothid", test_boothid);
-  CU_add_test(suite, "adLogin", test_adlogin);
+  CU_add_test(suite, "adLogin", test_adLogin);
 
 
   CU_basic_set_mode(CU_BRM_VERBOSE);
