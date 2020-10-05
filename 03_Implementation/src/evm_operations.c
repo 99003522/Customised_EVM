@@ -42,12 +42,8 @@ default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");//g
 
 int boothid(int id)//EVM ACTIVATION
 {
-
-
-     int boothid=100500;
-
-
-    if(id==boothid)
+int boothid=100500;
+if(id==boothid)
 	{
 	    printf("#####EVM ACTIVATED######\n");
 	    printf("CHIEF ELECTORAL OFFICER- Mr.Shyam Prasad Sharma\n");
@@ -61,10 +57,7 @@ int boothid(int id)//EVM ACTIVATION
 	else
 	{
 		printf("\n        SORRY !!!!  INCORRECT BOOTH ID\n          EVM ACTIVATION FAILED");
-
-
-
-		//getch();//holds the screen
+               //getch();//holds the screen
 		main();
 		return 0;
 
@@ -101,7 +94,8 @@ void castVote(){
     if (line != -1){
         printf("YOU HAVE ALREADY VOTED");
         //getch();
-        //system("cls");}
+        //system("cls");
+    }
     else
         {
              fclose(fptr);
@@ -171,7 +165,7 @@ int a=0,i=0;
 	printf(" \n                        PASSWORD:-");
 	while(i<10)
 	{
-	    pword[i]=getch();
+	    pword[i]=scanf();
 	    c=pword[i];
 	    if(c==13) break;
 	    else printf("*");
@@ -280,7 +274,7 @@ int leadingCandidate(int x,int y){
 	printf(" \n                        PASSWORD:-");
 	while(i<10)
 	{
-	    pword[i]=getch();
+	    pword[i]=scanf();
 	    c=pword[i];
 	    if(c==13) break;
 	    else printf("*");
