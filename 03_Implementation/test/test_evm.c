@@ -37,7 +37,7 @@ void test_boothid(void) {
 }
 
 
-void test_leadingCandidate(void) {
+void test_adLogin(void) {
   CU_ASSERT(3 == adLogin("admin","passkey"));
 
 
