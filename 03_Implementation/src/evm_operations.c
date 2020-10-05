@@ -50,7 +50,7 @@ if(id==boothid)
 	    printf("CONSTITUTION- TRIVANDRUM");
 	    //getch();
 	    //system("cls");
-	     menu();
+	     //menu();
 	    return 1;
 
 	}
