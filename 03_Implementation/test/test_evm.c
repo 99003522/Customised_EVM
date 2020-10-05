@@ -30,15 +30,15 @@ int main() {
 
 
 void test_boothid(void) {
-  CU_ASSERT(1 == test_boothid(100500));
+  CU_ASSERT(1 == boothid(100500));
 
 
-  CU_ASSERT(1 == test_boothid(15));
+  CU_ASSERT(1 == boothid(15));
 }
 
 
 void test_leadingCandidate(void) {
-  CU_ASSERT(3 == test_leadingCandidate(1,1));
+  CU_ASSERT(3 == leadingCandidate(1,1));
 
 
 }
