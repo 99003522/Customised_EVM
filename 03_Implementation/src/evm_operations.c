@@ -164,8 +164,8 @@ int a=0,i=0;
 	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
 	scanf("%s", pword);
-	strcpy(uname,"admin");
-	    strcpy(pword,"passkey");
+	//strcpy(uname,"admin");
+	   // strcpy(pword,"passkey");
 	/*    while(i<10)
 	{
 	    pword[i]=getc();
