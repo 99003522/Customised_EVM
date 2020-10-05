@@ -3,7 +3,7 @@
 #include <CUnit/CUnit.h>
 
 #define PROJECT_NAME    "EVM"
-#include<evm_properties.h>
+#include<evm_operations.h>
 
 void test_boothid(void);
 void test_adLogin(void);
