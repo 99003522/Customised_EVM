@@ -18,7 +18,7 @@ printf("\n 3. Find leading Candidate(only for admin)");
 printf("\n 4. exit");
 
 printf("\n\n Please enter your choice : ");
-scanf("%d", &choice);
+scanf("%d", 2);
 int a;
 switch(choice)
 {
