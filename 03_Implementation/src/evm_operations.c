@@ -290,8 +290,8 @@ int adLogin(char uname[10],char pword[10])
 	//char code=pword;
 	i=0;*/
 	//scanf("%s",&pword);
-	/*int p =adLogin(uname,pword);
-	if(p==1)
+	int p =adLogin(uname,pword);
+	/*if(p==1)
 	{
 	     printf("\n\n  #### Leading Candiate ####\n\n");
      if(votesCount1>votesCount2 && votesCount1>votesCount3 && votesCount1 >votesCount4)
@@ -336,5 +336,5 @@ int adLogin(char uname[10],char pword[10])
 		}
 		//system("cls");
 
-   }
+   }*/
 
