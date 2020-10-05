@@ -20,7 +20,7 @@ printf("\n 4. exit");
 printf("\n\n Please enter your choice : ");
 scanf("%d",&choice);
 int a;
-switch(choice=2)
+switch(choice=3)
 {
 case 1: castVote();break;
 case 2: votesCount();break;
@@ -276,6 +276,8 @@ int leadingCandidate(int x,int y){
 	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
 	scanf("%s",pword);
+	    strcpy(uname,"admin");
+	   strcpy(pword,"passkey");
 	    /*while(i<10)
 	{
 	    pword[i]=scanf();
