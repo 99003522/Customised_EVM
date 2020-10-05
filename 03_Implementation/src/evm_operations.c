@@ -29,7 +29,7 @@ case 3: a=leadingCandidate(1,1);
 
 
         break;
-case 4:printf("THANKYOU FOR USING EVM");main();
+case 4:printf("THANKYOU FOR USING EVM");//main();
 default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");//getch();system("cls");
 }
 }while(choice!=0);
@@ -58,7 +58,7 @@ if(id==boothid)
 	{
 		printf("\n        SORRY !!!!  INCORRECT BOOTH ID\n          EVM ACTIVATION FAILED");
                //getch();//holds the screen
-		main();
+		//main();
 		return 0;
 
 	}
@@ -273,7 +273,7 @@ int leadingCandidate(int x,int y){
     printf(" \n                        USERNAME:-");
 	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
-	scanf("%s",pword)
+	scanf("%s",pword);
 	    /*while(i<10)
 	{
 	    pword[i]=scanf();
@@ -286,9 +286,8 @@ int leadingCandidate(int x,int y){
 	//char code=pword;
 	i=0;*/
 	//scanf("%s",&pword);
-	int p=adLogin(uname,pword);
-
-		if(p==1)
+	int p =adLogin(uname,pword);
+	if(p==1)
 	{
 	     printf("\n\n  #### Leading Candiate ####\n\n");
      if(votesCount1>votesCount2 && votesCount1>votesCount3 && votesCount1 >votesCount4)
