@@ -44,13 +44,9 @@ getchar();
 
 int main()
 {   int id;
-
-
-    printf("\n  ========================  BOOTH LOGIN   ========================  ");
-    printf(" \n                        BOOTH ID:-");
-	scanf("%d",&id);
-    boothid(id);
-    
-
-return 0;
+printf("\n  ========================  BOOTH LOGIN   ========================  ");
+printf(" \n                        BOOTH ID:-");
+ scanf("%d",&id);
+ boothid(id);
+ return 0;
 }
