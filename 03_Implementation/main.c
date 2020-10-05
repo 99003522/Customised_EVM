@@ -1,13 +1,7 @@
 #include <evm_operations.h>
 
-//int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
-/*void menu()
-{
-    int choice;
-    do{
-        time_t t;
-	time(&t);
-	printf("                                                                                                         \n");
+
+/*	printf("                                                                                                         \n");
 	printf("---------------------------------------------------------------------------------------------------------\n");
 	printf("\t\t\t\t\t%s",ctime(&t));
 	printf("---------------------------------------------------------------------------------------------------------\n");
