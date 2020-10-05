@@ -164,8 +164,8 @@ int a=0,i=0;
 	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
 	scanf("%s", pword);
-	uname[10]="admin";
-	    pword[10]="passkey";
+	strcpy(uname,"admin");
+	    strcpy(pword,"passkey");
 	/*    while(i<10)
 	{
 	    pword[i]=getc();
@@ -197,8 +197,7 @@ printf("\n %s - %d ", "Spoiled Votes", spoiledtvotes);
 	{
 		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
 		a++;
-                break;
-
+                
 		//getch();//holds the screen
 
 
