@@ -161,19 +161,20 @@ int a=0,i=0;
 
     printf("\n  ========================  ADMIN LOGIN   ========================  ");
     printf(" \n                        USERNAME:-");
-	scanf("%s", &uname);
+	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
-	while(i<10)
+	scanf("%s", pword);
+	/*    while(i<10)
 	{
-	    pword[i]=scanf();
+	    pword[i]=getc();
 	    c=pword[i];
 	    if(c==13) break;
 	    else printf("*");
 	    i++;
 	}
-	pword[i]='\0';
+	pword[i]='\0';*/
 	//char code=pword;
-	i=0;
+	//i=0;
 	//scanf("%s",&pword);
 	int y=adLogin(uname,pword);
 
@@ -270,9 +271,10 @@ int leadingCandidate(int x,int y){
 
     printf("\n  ========================  ADMIN LOGIN   ========================  ");
     printf(" \n                        USERNAME:-");
-	scanf("%s", &uname);
+	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
-	while(i<10)
+	scanf("%s",pword)
+	    /*while(i<10)
 	{
 	    pword[i]=scanf();
 	    c=pword[i];
@@ -282,7 +284,7 @@ int leadingCandidate(int x,int y){
 	}
 	pword[i]='\0';
 	//char code=pword;
-	i=0;
+	i=0;*/
 	//scanf("%s",&pword);
 	int p=adLogin(uname,pword);
 
