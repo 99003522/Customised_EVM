@@ -290,7 +290,7 @@ int adLogin(char uname[10],char pword[10])
 	//char code=pword;
 	i=0;*/
 	//scanf("%s",&pword);
-	int p =adLogin(uname,pword);
+	//int p =adLogin(uname,pword);
 	/*if(p==1)
 	{
 	     printf("\n\n  #### Leading Candiate ####\n\n");
