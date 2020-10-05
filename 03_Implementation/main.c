@@ -55,11 +55,11 @@ printf("\n 4. exit");
 printf("\n\n Please enter your choice : ");
 scanf("%d",&choice);
 int a;
-switch(choice=3)
+switch(choice)
 {
 case 1: castVote();break;
 case 2: votesCount();break;
-case 3: a=leadingCandidate(1,1);
+case 3: leadingCandidate();
 
 
 
@@ -257,7 +257,7 @@ int CheckVoterId(FILE *fptr, const char *word, int *line, int *col)//checks if t
 
     return *col;
 }
-int leadingCandidate(int x,int y){
+void leadingCandidate(){
     system("cls");
     int a=0,i=0;
     char uname[10],c=' ';
@@ -272,8 +272,8 @@ int leadingCandidate(int x,int y){
 	scanf("%s", uname);
 	printf(" \n                        PASSWORD:-");
 	scanf("%s",pword);
-	    strcpy(uname,"admin");
-	   strcpy(pword,"passkey");
+	    //strcpy(uname,"admin");
+	   //strcpy(pword,"passkey");
 	    /*while(i<10)
 	{
 	    pword[i]=scanf();
@@ -293,18 +293,18 @@ int leadingCandidate(int x,int y){
      if(votesCount1>votesCount2 && votesCount1>votesCount3 && votesCount1 >votesCount4)
     {printf("\t%s",CANDIDATE1);
    
-    menu();return 3;
+    menu();
     }
     else if (votesCount2>votesCount3 && votesCount2>votesCount4 && votesCount2 >votesCount1)
-    {printf("\t%s",CANDIDATE2);return 4;
+    {printf("\t%s",CANDIDATE2);
     
     menu();}
     else if(votesCount3>votesCount4 && votesCount3>votesCount2 && votesCount3 >votesCount1)
-    {printf("\t%s",CANDIDATE3);return 5;
+    {printf("\t%s",CANDIDATE3);
    
     menu();}
     else if(votesCount4>votesCount1 && votesCount4>votesCount2 && votesCount4 >votesCount3)
-    {printf("\t%s",CANDIDATE4);return 6;
+    {printf("\t%s",CANDIDATE4);
     
     menu();}
     else
