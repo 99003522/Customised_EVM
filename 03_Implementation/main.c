@@ -1,39 +1,5 @@
 #include <evm_operations.h>
 
-
-/*	printf("                                                                                                         \n");
-	printf("---------------------------------------------------------------------------------------------------------\n");
-	printf("\t\t\t\t\t%s",ctime(&t));
-	printf("---------------------------------------------------------------------------------------------------------\n");
-
- printf("\n\n ###### Welcome to Election/Voting 2020 #####");
-printf("\n\n 1. Cast the Vote");
-printf("\n 2. Find Vote Count(only for admin)");
-printf("\n 3. Find leading Candidate(only for admin)");
-printf("\n 4. exit");
-
-printf("\n\n Please enter your choice : ");
-scanf("%d", &choice);
-int a;
-switch(choice)
-{
-case 1: castVote();break;
-case 2: votesCount();break;
-case 3: a=leadingCandidate(1,1);
-
-
-
-        break;
-case 4:printf("THANKYOU FOR USING EVM");getch();system("cls");main();
-default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");getch();system("cls");
-}
-}while(choice!=0);
-
-//hold the screen
-getchar();
-
-}
-*/
 int votesCount1=0, votesCount2=0, votesCount3=0, votesCount4=0, spoiledtvotes=0;
 void menu()
 {
@@ -77,11 +43,11 @@ void castVote(){
     FILE *fptr;
    // FILE *fpt1;
 
-    char word[50];
+    char word[10];
 
     int line, col;
     printf("Enter your voter id ");
-    scanf("%s", word);
+    scanf("%10s", word);
 
 
     /* Try to open file */
@@ -168,9 +134,9 @@ int a=0;
 
     printf("\n  ========================  ADMIN LOGIN   ========================  ");
     printf(" \n                        USERNAME:-");
-	scanf("%s", uname);
+	scanf("%10s", uname);
 	printf(" \n                        PASSWORD:-");
-	scanf("%s", pword);
+	scanf("%10s", pword);
 	//strcpy(uname,"admin");
 	   // strcpy(pword,"passkey");
 	/*    while(i<10)
@@ -267,9 +233,9 @@ void leadingCandidate(){
 
     printf("\n  ========================  ADMIN LOGIN   ========================  ");
     printf(" \n                        USERNAME:-");
-	scanf("%s", uname);
+	scanf("%10s", uname);
 	printf(" \n                        PASSWORD:-");
-	scanf("%s",pword);
+	scanf("%10s",pword);
 	    //strcpy(uname,"admin");
 	   //strcpy(pword,"passkey");
 	    /*while(i<10)
