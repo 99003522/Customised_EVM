@@ -159,11 +159,10 @@ menu();
 }
 void votesCount(){
     system("cls");
-int a=0,i=0;
-    char uname[10],c=' ';
-    char pword[10],code[10];
-    char user[10]="admin";
-    char pass[10]="passkey";
+int a=0;
+    char uname[10];
+    char pword[10];
+    
     do
 {
 
@@ -259,11 +258,10 @@ int CheckVoterId(FILE *fptr, const char *word, int *line, int *col)//checks if t
 }
 void leadingCandidate(){
     system("cls");
-    int a=0,i=0;
-    char uname[10],c=' ';
-    char pword[10],code[10];
-    char user[10]="admin";
-    char pass[10]="passkey";
+    int a=0;
+    char uname[10];
+    char pword[10];
+    
     do
 {
 
