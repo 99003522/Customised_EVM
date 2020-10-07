@@ -47,7 +47,7 @@ void castVote(){
 
     int line, col;
     printf("Enter your voter id ");
-    scanf("%10s", word);
+    scanf("%9s", word);
 
 
     /* Try to open file */
@@ -134,9 +134,9 @@ int a=0;
 
     printf("\n  ========================  ADMIN LOGIN   ========================  ");
     printf(" \n                        USERNAME:-");
-	scanf("%10s", uname);
+	scanf("%9s", uname);
 	printf(" \n                        PASSWORD:-");
-	scanf("%10s", pword);
+	scanf("%9s", pword);
 	//strcpy(uname,"admin");
 	   // strcpy(pword,"passkey");
 	/*    while(i<10)
@@ -233,9 +233,9 @@ void leadingCandidate(){
 
     printf("\n  ========================  ADMIN LOGIN   ========================  ");
     printf(" \n                        USERNAME:-");
-	scanf("%10s", uname);
+	scanf("%9s", uname);
 	printf(" \n                        PASSWORD:-");
-	scanf("%10s",pword);
+	scanf("%9s",pword);
 	    //strcpy(uname,"admin");
 	   //strcpy(pword,"passkey");
 	    /*while(i<10)
