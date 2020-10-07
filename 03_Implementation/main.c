@@ -75,7 +75,7 @@ default: printf("\n Error: Invalid Choice!!!\n Please enter a valid Choice");//g
 }
 void castVote(){
     FILE *fptr;
-    FILE *fpt1;
+   // FILE *fpt1;
 
     char word[50];
 
@@ -108,7 +108,7 @@ void castVote(){
     else
         {
              fclose(fptr);
-
+     FILE *fpt1;
    fpt1= (fopen("VoterId.txt", "a"));
    if(fpt1 == NULL)
    {
