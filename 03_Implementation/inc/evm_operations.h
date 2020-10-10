@@ -20,3 +20,5 @@ int adLogin(char uname[10],char pword[10]);
 
 #endif
 
+
+
